@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    
+    <style>
+        #marquee {
+            font-size: 20pt;
+            font-weight: bold;
+        }
+       h1{
+         font-family: 'Arial';
+         font-weight: lighter;
+         font-size: 50pt;
+         text-shadow: 2px 10px 5px black;
+
+       }
+        /* Adding background image styling */
+        body {
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            font-family:"Papyrus";
+            text-shadow: 2px 2px black;
+            text-align: center;
+            background-image: url("rainbow floral pattern.png"); /* Update this path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        
+        div {
+            width: 400px;
+            height: auto; /* Allow div to expand with content */
+            background-color: yellow;
+            background-image: url("rainbow Gradient - htmlcolors.com.jpg"); /* Update this path */
+            background-size: cover;
+            box-shadow: 5px 5px 8px blue, 10px 10px  red, 15px 15px green;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'impact';
+            font-size: xx-large;
+            text-shadow: 4px 5px red;
+            text-align: center;
+            border: 1px solid red;
+            transform: translate(50px, 100px);
+            padding: 20px;
+        }
+
+        p {
+            font-size: small;
+            font-weight: bold;
+        }
+
+        h6 {
+            font-weight: lighter;
+            text-align: left;
+            color: blue;
+            text-shadow: 1px 1px yellow;
+        }
+
+        img{
+            border: 4px solid red;
+            box-shadow: 2px 2px 7px black;
+        }
+    </style>
+</head>
+
+    <h1>Welcome!</h1> 
+    <h6 style="text-align: right">Hamin Seo © 2024</h6>
+
+    
+    
+    <body> 
+    <script src="move.js"></script>
+
+    <marquee> ~Happy Happy Monday~ </marquee>
+    
+    <marquee direction="right" behavior="alternate" 
+        style="border:black 3px solid">
+        Hello Hello Hello RISD 26' 27' Studio Gang
+    </marquee>
+
+    <marquee id="marquee"> This is so fun  </marquee> 
+
+    <script> 
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function applyRandomColors() {
+            const elements = document.querySelectorAll('h1, body, p, h6, div, marquee');
+            elements.forEach(element => {
+                element.style.color = getRandomColor();
+            });
+        }
+
+        applyRandomColors(); // Apply colors on page load
+    </script>
+
+    <div> Wanna know about Ugly? <br> CLICK ⬇︎ </div>
+
+        <a href="etymology.html">
+            <img src="low01@0.1x.jpg" alt="etymology" style="width:50px;height:300px;">
+        </a> 
+        <a href="example.html"> 
+            <img src="specific example@0.1x.jpg" alt="example" style="width:300px;height:100px;">
+        </a>
+        <a href="approach.html"> 
+            <img src="low@0.1x2@0.1x.jpg" alt="approach" style="width:150px;height:150px;">
+        </a>
+        <a href="history.html"> 
+            <img src="low2@0.1x2@0.1x.jpg" alt="history" style="width:100px;height:500px;">
+        </a>
+        <a href="visual.html"> 
+            <img src="sign@low.jpg" alt="visual" style="width:700px;height:300px;">
+        </a> 
+    </div>
+
+    <marquee>You know what? <br>The text color changes randomly.</marquee> 
+    <marquee direction="down" width="100" height="200">I love Graphic Design </marquee> 
+    <marquee direction="down" width="200" height="50" behavior="alternate" style="border:solid">
+        <br>  <marquee behavior="alternate">#4A412A</marquee>
+    </marquee>  
+
+    <h1>☟☟☟</h1><p>It's the UGLIEST color in the world</p>
+    <img src="colorbox.png" alt="colorbox" width="200" height="200">
+    <img src="colorbox.png" alt="colorbox" width="200" height="200">
+    <img src="colorbox.png" alt="colorbox" width="200" height="200">
+
+
+    <script src="move.js"></script>
+
+        <h5> ⇩ Create a masterpiece with this color! ⇩</h5>
+</body>
+</html>

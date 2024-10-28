@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGLY</title> 
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #4A412A; /* Set a background color that matches your design */
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        #main-content {
+            position: relative;
+            z-index: 10; /* Ensure it's above the p5.js canvas */
+        }
+        /* Tailwind CSS doesn't come with grid-gap utilities by default, you might need to add custom CSS if needed */
+    </style>
+</head> 
+<body class="overflow-hidden">
+    <nav class="absolute top-0 left-0 w-full flex justify-between items-center p-10" style="z-index: 20;">
+        <a href="/Users/seohamin/Desktop/Graduate Seminar 01 _ Anther/Project1_Definition Term/41454426.jpg" class="text-xl uppercase hover:text-white-400">Etymology</a>
+        <a href="/Users/seohamin/Desktop/231213_webdesign/subpages/01_work.html" class="text-xl uppercase hover:text-gray-400">Work</a>
+    </nav>
+    <!-- p5.js canvas will be inserted here by your p5 script -->
+
+    <!-- Main content -->
+    <div id="main-content" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <h1 class="text-4xl text-white uppercase">UGLY ?</h1>
+        <h2 class="text-sm text-white-100">Hamin Seo Grad Seminar01 RISD 2024</h2>
+        <p class="text-sm mt-4 text-gray-400 font-weight:20;">dd <br/>
+        </p>
+    </div>
+
+</body>
+</html> 
